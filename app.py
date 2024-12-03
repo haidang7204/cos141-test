@@ -171,7 +171,7 @@ def newsletter():
     if request.method == "POST":
         fullname = request.form["fullname"]
         email = request.form["email"]
-
+# test
         conn = mysql.connect()
         cursor = conn.cursor(pymysql.cursors.DictCursor)
         cursor.execute(
